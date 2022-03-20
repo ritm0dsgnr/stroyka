@@ -87,17 +87,20 @@ body.lock{
   height: 80px;
 }
 
-.nav{
+.header--main{
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 15px;
 }
 
 .nav div .nav__link:not(:last-child){
@@ -1051,23 +1054,12 @@ body.lock{
   line-height: 21.94px;
 }
 
-
-/*------Animation------*/
-.nav__link.anim{
-  opacity: 0;
-  transition: 0.7s;
-  transform: translateY(-100px);
-}
-.nav__link.anim-show{
-  opacity: 1;
-  transform: translateY(0);
-}
-/*------Animation------*/
-
-
 /*------Media------*/
 @media (max-width: 1220px){
   body{
+    min-width: 1220px;
+  }
+  .header--main{
     min-width: 1220px;
   }
 }
