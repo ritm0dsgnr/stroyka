@@ -1048,7 +1048,7 @@ body.lock{
   text-align: right;
 }
 
-.btn__link{
+.seller__btn__link{
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1094,7 +1094,9 @@ body.lock{
 }
 
 .radio__input{
-  appearance: none;
+  -webkit-appearance: button; 
+  -moz-appearance: button; 
+  appearance: button; 
   position: absolute;
 }
 
