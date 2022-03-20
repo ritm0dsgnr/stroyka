@@ -1002,11 +1002,141 @@ body.lock{
   margin-top: 10px;
 }
 
+.seller__filter{
+  margin-bottom: 255px;
+}
 
+.seller__filter__conditions{
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.427179px;
+  color: #979797;
+  margin-top: 18px;
+  margin-bottom: 17px;
+}
 
-
-
+.linnes__sl{
+  pointer-events: none;
+  position: absolute;
+  top: 94px;
+  left: -72px;
+}
 /*---------item---------*/
+
+/*---------seller---------*/
+
+/*---------seller---------*/
+.title.seller{
+  padding-top: 48px;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: -1.25641px;
+}
+
+.seller__title{
+  margin-top: 59px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.seller__btn{
+  margin-top: 76px;
+  text-align: right;
+}
+
+.btn__link{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.427179px;
+  color: #FFFFFF;
+  background-color: #DE0101;
+  padding: 26px 117px;
+}
+
+.seller__filter__title{
+  margin-top: 87px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.seller__filter__container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.seller__filter__inner.form{
+  width: 543px;
+  padding: 10px 30px;
+  background: #FFFFFF;
+  border-radius: 25px;
+  margin-top: 0;
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+}
+
+.seller__filter__inner.form .item__form button{
+  margin-top: 25px;
+}
+
+.radio{
+  padding: 20px 70px;
+  width: 592px;
+  background: #FFFFFF;
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+  margin-bottom: 27px;
+}
+
+.radio__input{
+  appearance: none;
+  position: absolute;
+}
+
+.radio__lable{
+  position: relative;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+}
+
+.radio__lable:before{
+  content: '';
+  background-color: transparent;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #DE0101;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -47px;
+}
+
+.radio__lable:after{
+  content: '';
+  background-color: #DE0101;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #DE0101;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: -47px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.radio__input:checked + .radio__lable:after{
+  opacity: 1;
+}
 
 /*---------footer---------*/
 .footer{
