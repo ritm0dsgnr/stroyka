@@ -232,6 +232,7 @@ body.lock{
 }
 
 .serch__input{
+  padding-left: 20px;
   width: 412px;
   height: 50px;
   background: #E5E5E5;
@@ -239,6 +240,7 @@ body.lock{
 }
 
 .form__btn{
+  cursor: pointer;
   width: 100%;
   height: 50px;
   color: #fff;
@@ -401,7 +403,6 @@ body.lock{
   margin-left: 15px;
   font-size: 18px;
   font-weight: 400;
-
 }
 
 .filter__btn{
@@ -1026,8 +1027,6 @@ body.lock{
 /*---------item---------*/
 
 /*---------seller---------*/
-
-/*---------seller---------*/
 .title.seller{
   padding-top: 48px;
   font-weight: 500;
@@ -1094,9 +1093,9 @@ body.lock{
 }
 
 .radio__input{
-  -webkit-appearance: button; 
-  -moz-appearance: button; 
-  appearance: button; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  appearance: none; 
   position: absolute;
 }
 
@@ -1110,6 +1109,7 @@ body.lock{
 
 .radio__lable:before{
   content: '';
+  cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
   width: 20px;
@@ -1123,6 +1123,7 @@ body.lock{
 
 .radio__lable:after{
   content: '';
+  cursor: pointer;
   background-color: #DE0101;
   border-radius: 50%;
   width: 20px;
@@ -1139,6 +1140,7 @@ body.lock{
 .radio__input:checked + .radio__lable:after{
   opacity: 1;
 }
+/*---------seller---------*/
 
 /*---------footer---------*/
 .footer{
