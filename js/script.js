@@ -1,5 +1,11 @@
-var arrow = document.querySelectorAll('.arrow');
+$(".arrow").click(function(event) {
+    $(this).toggleClass('active');
+});
 
-arrow.forEach(element=> (element.onclick = function(e) {
-  element.classList.toggle ('active');
-}));
+$(".spoiler__title").click(function(event) {
+  if($('.spoiler').hasClass('one')){
+    $('.spoiler__title').not($(this)).removeClass('active');
+    $('.spoiler__text').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+});
