@@ -19,7 +19,7 @@
 						</a>
 					</div>
 					<div>
-						<a class="nav__link" href="#">Меню +</a>
+						<a class="nav__link m_link" href="#">Меню +</a>
 					</div>
 					<div>
 						<a class="nav__link" href="catalog.html">Объекты</a>
@@ -30,6 +30,14 @@
 				</nav>
 			</div>
 		</header>
+		<div class="menu">
+			<a class="menu__link" href="catalog.html">Объекты</a>
+			<a class="menu__link" href="buyer.html">Покупателю</a>
+			<a class="menu__link" href="seller.html">Продавцу</a>
+			<a class="menu__link" href="services.html">Все услуги</a>
+			<a class="menu__link" href="about.html">О компании</a>
+			<a class="menu__link" href="#">Отзывы</a>
+		</div>
 		<section class="seller">
 			<div class="container">
 				<h3 class="title seller">Мы готовы оказать Вам полный<br>список услуг по продаже недвижеости</h3>
@@ -59,38 +67,83 @@
 				<p class="seller__filter__title">Выберите объект недвижимости,<br>который хотите продать</p>
 				<div class="seller__filter__container">
 					<div class="seller__filter__inner">
-						<div class="radio">
+						<div class="radio room">
 							<input class="radio__input" name="object" type="radio" id="flat" >
 							<label class="radio__lable" for="flat">Квартира</label>
 						</div>
-						<div class="radio">
+						<div class="radio room">
 							<input class="radio__input" name="object" type="radio" id="room" >
 							<label class="radio__lable" for="room">Комната</label>
 						</div>
-						<div class="radio">
+						<div class="radio room">
 							<input class="radio__input" name="object" type="radio" id="new_building" >
 							<label class="radio__lable" for="new_building">Квартира в новостройке</label>
 						</div>
-						<div class="radio">
+						<div class="radio house">
 							<input class="radio__input" name="object" type="radio" id="cottages" >
 							<label class="radio__lable" for="cottages">Дома, дачи, таунхаусы</label>
 						</div>
-						<div class="radio">
+						<div class="radio land_plot">
 							<input class="radio__input" name="object" type="radio" id="land" >
 							<label class="radio__lable" for="land">Земельные участки</label>
 						</div>
-						<div class="radio">
+						<div class="radio business">
 							<input class="radio__input" name="object" type="radio" id="business" >
 							<label class="radio__lable" for="business">Бизнес недвижимость</label>
 						</div>
 					</div>
-					<div class="seller__filter__inner form">
+					<div class="seller__filter__inner form form__def">
 						<form class="item__form">
-							<input type="square" name="площадь" placeholder="Площадь">
-							<input type="lot" name="количество" placeholder="Количество комнат">
-							<input type="adress" name="адрес" placeholder="Адрес">
-							<input type="name" name="имя" placeholder="Имя">
-							<input type="phone" name="email" placeholder="Телефон">
+							<input name="площадь" placeholder="Площадь">
+							<input name="количество" placeholder="Количество комнат">
+							<input name="адрес" placeholder="Адрес">
+							<input name="имя" placeholder="Имя">
+							<input name="email" placeholder="Телефон">
+							<button class="item__form__btn" type="submit">Продать квартиру</button>
+							<p class="seller__filter__conditions">Отправляя форму Вы соглашаетесь с условиями обработки<br>персональных данных</p>
+						</form>
+					</div>
+					<div class="seller__filter__inner form form__room">
+						<form class="item__form">
+							<input name="площадь" placeholder="Площадь">
+							<input name="количество" placeholder="Количество комнат">
+							<input name="адрес" placeholder="Адрес">
+							<input name="имя" placeholder="Имя">
+							<input name="email" placeholder="Телефон">
+							<button class="item__form__btn" type="submit">Продать квартиру</button>
+							<p class="seller__filter__conditions">Отправляя форму Вы соглашаетесь с условиями обработки<br>персональных данных</p>
+						</form>
+					</div>
+					<div class="seller__filter__inner form form__house">
+						<form class="item__form">
+							<input name="площадь" placeholder="Площадь">
+							<input name="количество" placeholder="Количество комнат">
+							<input name="площадь" placeholder="Площадь участка">
+							<input name="адрес" placeholder="Адрес">
+							<input name="имя" placeholder="Имя">
+							<input name="email" placeholder="Телефон">
+							<button class="item__form__btn" type="submit">Продать квартиру</button>
+							<p class="seller__filter__conditions">Отправляя форму Вы соглашаетесь с условиями обработки<br>персональных данных</p>
+						</form>
+					</div>
+					<div class="seller__filter__inner form form__land_plot">
+						<form class="item__form">
+							<input name="площадь" placeholder="Площадь участка">
+							<input name="кадастровый номер" placeholder="Кадастровый номер">
+							<input name="адрес" placeholder="Адрес">
+							<input name="имя" placeholder="Имя">
+							<input name="email" placeholder="Телефон">
+							<button class="item__form__btn" type="submit">Продать квартиру</button>
+							<p class="seller__filter__conditions">Отправляя форму Вы соглашаетесь с условиями обработки<br>персональных данных</p>
+						</form>
+					</div>
+					<div class="seller__filter__inner form form__business">
+						<form class="item__form">
+							<input name="площадь" placeholder="Площадь">
+							<input name="вид объекта" placeholder="Вид объекта">
+							<input name="адрес" placeholder="Адрес">
+							<input name="имя" placeholder="Имя">
+							<input name="email" placeholder="Телефон">
 							<button class="item__form__btn" type="submit">Продать квартиру</button>
 							<p class="seller__filter__conditions">Отправляя форму Вы соглашаетесь с условиями обработки<br>персональных данных</p>
 						</form>
@@ -123,6 +176,9 @@
 	  		</div>
 		</footer>
   	</div>
+
+  	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

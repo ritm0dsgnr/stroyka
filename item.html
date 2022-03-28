@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Стройка 56</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
@@ -19,7 +20,7 @@
 						</a>
 					</div>
 					<div>
-						<a class="nav__link" href="#">Меню +</a>
+						<a class="nav__link m_link" href="#">Меню +</a>
 					</div>
 					<div>
 						<a class="nav__link" href="catalog.html">Объекты</a>
@@ -30,6 +31,14 @@
 				</nav>
 			</div>
 		</header>
+		<div class="menu">
+			<a class="menu__link" href="catalog.html">Объекты</a>
+			<a class="menu__link" href="buyer.html">Покупателю</a>
+			<a class="menu__link" href="seller.html">Продавцу</a>
+			<a class="menu__link" href="services.html">Все услуги</a>
+			<a class="menu__link" href="about.html">О компании</a>
+			<a class="menu__link" href="#">Отзывы</a>
+		</div>
 		<section class="item__title">
 			<div class="container">
 				<div class="item__content">
@@ -48,26 +57,26 @@
 				<div class="item__info">
 					<div class="item__info__inner">
 						<div class="item__info__media">
-							<img src="img/item_1/item_1.png" alt="">
+							<a href="img/item_1/item_1.png" data-lightbox="img"><img src="img/item_1/item_1.png" alt=""></a>
 						</div>
 						<div class="info__gallery">
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_2.png" alt="">
+								<a href="img/item_1/item_2.png" data-lightbox="img"><img src="img/item_1/item_2.png" alt=""></a>
 							</div>
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_3.png" alt="">
+								<a href="img/item_1/item_3.png" data-lightbox="img"><img src="img/item_1/item_3.png" alt=""></a>
 							</div>
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_4.png" alt="">
+								<a href="img/item_1/item_4.png" data-lightbox="img"><img src="img/item_1/item_4.png" alt=""></a>
 							</div>
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_5.png" alt="">
+								<a href="img/item_1/item_5.png" data-lightbox="img"><img src="img/item_1/item_5.png" alt=""></a>
 							</div>
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_6.png" alt="">
+								<a href="img/item_1/item_6.png" data-lightbox="img"><img src="img/item_1/item_6.png" alt=""></a>
 							</div>
 							<div class="info__gallery__media">
-								<img src="img/item_1/item_7.png" alt="">
+								<a href="img/item_1/item_7.png" data-lightbox="img"><img src="img/item_1/item_7.png" alt=""></a>
 							</div>
 						</div>
 						<div class="catalog__info__wrapper">
@@ -113,9 +122,9 @@
 								</div>
 							</div>
 							<form class="item__form">
-								<input type="name" name="имя" placeholder="Имя">
-								<input type="phone" name="phone" placeholder="Телефон">
-								<input type="email" name="email" placeholder="Email">
+								<input name="имя" placeholder="Имя">
+								<input name="phone" placeholder="Телефон">
+								<input name="email" placeholder="Email">
 								<textarea cols="30" rows="3" placeholder="Задайте нам вопрос"></textarea>
 								<button class="item__form__btn" type="submit">Узнать больше</button>
 							</form>
@@ -225,6 +234,10 @@
 	  		</div>
 		</footer>
   	</div>
+
+	<script src="js/jquery.min.js"></script>
+  	<script src="js/script.js"></script>
+	<script src="js/lightbox.js"></script>
 
 </body>
 </html>

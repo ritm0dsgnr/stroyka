@@ -92,7 +92,7 @@ body.lock{
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: rgba(0, 0, 0, .8);
 }
 
@@ -122,6 +122,38 @@ body.lock{
 .nav__link.phone{
   font-weight: 500;
 }
+
+.menu{
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .8s;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.menu.active{
+  top: 80px;
+}
+
+.menu a{
+  margin-bottom: 40px;
+}
+
+.menu__link{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
 /*---------header---------*/
 
 /*---------index---------*/
@@ -398,11 +430,35 @@ body.lock{
   top: 0;
 }
 
+.filter__point{
+  position: relative;
+  z-index: 2;
+  padding-top: 12px;
+  background-color: #E5E5E5;
+  display: none;
+}
+
+.filter__point.category.active{
+  display: block;
+}
+
+.filter__point.lot.active{
+  display: block;
+}
+
+.filter__point.price.active{
+  display: block;
+}
+
 .filter__text{
   margin-top: 1px;
   margin-left: 15px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.filter__text.category{
+  padding: 15px 0;
 }
 
 .filter__btn{
@@ -830,6 +886,7 @@ body.lock{
 }
 
 .item__info__media img{
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -873,18 +930,23 @@ body.lock{
 }
 
 .catalog__description__title{
+  position: relative;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.502564px;
+  margin-bottom: 68px;
 }
 
-.line__description{
-  margin-top: 33px;
-  margin-bottom: 35px;
+.catalog__description__title:after{
+  content: '';
+  position: absolute;
+  bottom: -34px;
+  left: -30px;
   width: 792px;
   height: 1px;
   background-color: #E4E4E4;
+  display: block;
 }
 
 .catalog__description__text{
@@ -1078,6 +1140,31 @@ body.lock{
   border-radius: 25px;
   margin-top: 0;
   box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714);
+}
+
+.seller__filter__inner.form.form__room,
+.seller__filter__inner.form.form__house,
+.seller__filter__inner.form.form__land_plot,
+.seller__filter__inner.form.form__business{
+  display: none;
+}
+
+.seller__filter__inner.form.form__room.block{
+  display: block;
+}
+.seller__filter__inner.form.form__house.block{
+  display: block;
+}
+.seller__filter__inner.form.form__land_plot.block{
+  display: block;
+}
+.seller__filter__inner.form.form__business.block{
+  display: block;
+}
+
+
+.none{
+  display: none;
 }
 
 .seller__filter__inner.form .item__form button{
@@ -1281,6 +1368,10 @@ body.lock{
   border-radius: 25px;
 }
 
+.logo__inner img{
+  max-width: 325px;
+}
+
 /*---------conditions---------*/
 
 /*---------services---------*/
@@ -1449,5 +1540,29 @@ body.lock{
   .item__info.spoiler{
     padding: 0px;
   }
+  .popup__media__container{
+    min-width: 1220px;
+  }
+  .menu{
+    min-width: 1220px;
+  }
+  .lightbox{
+    min-width: 1220px;
+  }
 }
+
+@media (max-width: 1920px){
+    .item_1__popup,
+    .item_2__popup,
+    .item_3__popup,
+    .item_4__popup,
+    .item_5__popup,
+    .item_6__popup,
+    .item_7__popup{
+      height: calc(400px + (1000 - 400) * ((100vw - 320px) / (1920 - 320)));
+      padding: calc(10px + (50 - 10) * ((100vw - 320px) / (1920 - 320)));
+  }
+  .logo__inner img{
+    max-width: calc(170px + (325 - 170) * ((100vw - 320px) / (1920 - 320)));
+  }
 /*------Media------*/
