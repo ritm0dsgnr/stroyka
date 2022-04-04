@@ -88,7 +88,7 @@ body.lock{
 }
 
 .header--main{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -107,6 +107,45 @@ body.lock{
   margin-right: 22px;
 }
 
+.m_link{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  padding: 20px 20px 60px 20px;
+  position: relative;
+}
+
+.m_link:hover{
+  background-color: #DE0101;
+}
+
+.m__block{
+  position: absolute;
+  top: 79px;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+}
+
+.m__block.active{
+  display: flex;
+}
+
+.m__block .menu__link{
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.menu__link.active{
+  display: block;
+}
+
+.menu__link:hover{
+  background-color: #DE0101;
+}
+
 .logo{
   width: 177px;
 }
@@ -117,33 +156,15 @@ body.lock{
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: -0.01em;
+  transition: .3s color;
+}
+
+.nav__link:hover{
+  color: #DE0101;
 }
 
 .nav__link.phone{
   font-weight: 500;
-}
-
-.menu{
-  position: absolute;
-  top: -100%;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: .8s;
-  background-color: rgba(0, 0, 0, .8);
-}
-
-.menu.active{
-  top: 80px;
-}
-
-.menu a{
-  margin-bottom: 40px;
 }
 
 .menu__link{
@@ -614,6 +635,10 @@ body.lock{
 /*---------index---------*/
 
 /*---------catalog---------*/
+section.catalog{
+  padding-top: 80px;
+}
+
 .catalog{
   position: relative;
   margin-bottom: 201px;
@@ -832,6 +857,10 @@ body.lock{
 /*---------catalog---------*/
 
 /*---------item---------*/
+section.item__title{
+  margin-top: 80px;
+}
+
 .item__title{
   border-top: 2px solid #fff;
   padding: 40px 0;
@@ -910,7 +939,8 @@ body.lock{
   overflow: hidden;
 }
 
-.info__gallery__media img{
+.info__gallery__media .info__gallery__media__img{
+  cursor: pointer;
   position: absolute;
   top: 0;
   left: 0;
@@ -1089,6 +1119,10 @@ body.lock{
 /*---------item---------*/
 
 /*---------seller---------*/
+section.seller{
+  padding-top: 80px;
+}
+
 .title.seller{
   padding-top: 48px;
   font-weight: 500;
@@ -1230,6 +1264,10 @@ body.lock{
 /*---------seller---------*/
 
 /*---------buyer---------*/
+section.buyer{
+  padding-top: 80px;
+}
+
 .title.buyer{
   padding-top: 48px;
   margin-bottom: 0;
@@ -1298,6 +1336,10 @@ body.lock{
 /*---------buyer---------*/
 
 /*---------conditions---------*/
+section.conditions{
+  padding-top: 80px;
+}
+
 .container__conditions{
   position: relative;
   width: 100%;
@@ -1328,7 +1370,7 @@ body.lock{
 .conditions__title{
   margin-top: 62px;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   font-weight: 500;
   font-size: 64px;
   line-height: 78px;
@@ -1375,15 +1417,21 @@ body.lock{
 /*---------conditions---------*/
 
 /*---------services---------*/
+section.services{
+  padding-top: 80px;
+}
+
 .services{
   margin-bottom: 88px;
 }
+
 .services__media{
   width: 100%;
   height: 956px;
   position: relative;
   overflow: hidden;
 } 
+
 .services__media img{
   width: 100%;
   height: 100%;
@@ -1501,14 +1549,16 @@ body.lock{
   font-size: 18px;
   font-weight: 300;
   line-height: 21.94px;
-}
-
-.footer__link{
   color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 300;
   line-height: 21.94px;
+  transition: .3s color;
+}
+
+.footer__link:hover{
+  color: #DE0101;
 }
 
 .adress{
@@ -1524,6 +1574,11 @@ body.lock{
   font-size: 18px;
   font-weight: 300;
   line-height: 21.94px;
+  transition: .3s color;
+}
+
+.adress__text:hover{
+  color: #DE0101;
 }
 
 /*------Media------*/

@@ -1,5 +1,15 @@
-$(".m_link").click(function(event) {
-    $(".menu").toggleClass('active');
+$("body").on("click", ".info__gallery__media__img", function () {
+  $("#main__link").attr("href", $(this).attr("src"));
+   $("#main").attr("src", $(this).attr("src"));
+});
+
+
+$(".m_link").hover(function(event) {
+    $(".m__block").toggleClass('active');
+});
+
+$(".menu__link").hover(function(event) {
+    $(".m__block").toggleClass('active');
 });
 
 
