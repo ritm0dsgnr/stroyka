@@ -311,6 +311,10 @@ body.lock{
   overflow: hidden;
 }
 
+video::-webkit-media-controls {
+    display:none !important;
+}
+
 .intro__media img{
   position: absolute;
   top: 0;
