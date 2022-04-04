@@ -311,8 +311,9 @@ body.lock{
   overflow: hidden;
 }
 
-video::-webkit-media-controls {
-    display:none !important;
+::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
 }
 
 .intro__media img{
